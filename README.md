@@ -1,9 +1,16 @@
-# CounterGen
-Automatically generating natural language counterfactuals for Indic Language sentences
+# Indic Language Counterfactuals
 
-Use requirements.txt to set up your conda environment
+This repository contains code to automatically generate natural language counterfactuals for Indic language sentences. 
+## Setup
 
-translate_notebook.ipynb provides two methods to translate the original English datasets: by using either ai4bharat's IndicTrans or Helsinki NLP's translation model for Indic languages. IndicTrans gives better results but is slower.
+To set up your conda environment, use `requirements.txt`.
 
-sentence_score.ipynb takes you through fluency filtering, masking, finetuning and some downstream tasks.
+## Usage
 
+### Translating Datasets
+
+To translate the original English datasets, use `translate_notebook.ipynb`. There are two methods available: using IndicTrans or Helsinki NLP's translation model for Indic languages. IndicTrans provides better results but is slower.
+
+### Generating Counterfactuals
+
+To generate counterfactuals, use `sentence_score.ipynb`. This notebook walks you through the process of fluency filtering, masking, finetuning, and some downstream tasks for evaluation.
